@@ -17,5 +17,16 @@ namespace developed_lot{
         double value();
     };
 };
+namespace office{
+class Office : public developed_lot::DevelopedLot {
+	private:
+		int num_offices
+	public:
+		Office(double, double, double, double, double, int, int);
 
+	virtual ~Office(){};
+
+	double value();
+};
+};
 #endif
